@@ -1,0 +1,20 @@
+[project]
+name = "video-mamba-suite"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "causal-conv1d",
+    "h5py>=3.14.0",
+    "joblib>=1.5.1",
+    "mamba-ssm",
+    "mmengine>=0.10.7",
+    "pandas>=2.3.1",
+    "scipy>=1.15.3",
+    "tensorboard>=2.19.0",
+]
+
+[tool.uv.sources]
+causal-conv1d = { path = "causal-conv1d" }
+mamba-ssm = { path = "mamba" }

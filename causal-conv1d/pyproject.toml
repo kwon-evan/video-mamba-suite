@@ -1,0 +1,30 @@
+[project]
+name = "causal-conv1d"
+readme = "README.md"
+requires-python = ">= 3.9"
+dynamic = ["version"]
+license = { file = "LICENSE" }  # Include a LICENSE file in your repo
+keywords = ["cuda", "pytorch", "state-space model"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Unix"
+]
+dependencies = [
+    "torch",
+    "ninja",
+    "packaging",
+    "setuptools>=61.0.0",
+]
+[project.urls]
+Repository = "https://github.com/Dao-AILab/causal-conv1d"
+
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+    "wheel",
+    "torch",
+    "packaging",
+    "ninja",
+]
+build-backend = "setuptools.build_meta"
